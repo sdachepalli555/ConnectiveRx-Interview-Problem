@@ -1,0 +1,35 @@
+<h3 id="name" name="name">Country : {{countryName}}</h3>
+<hr>
+<div class="row">
+    <div class="col-xs-12">
+        <form #f="ngForm">            
+            <div class="row">
+                <div class="col-sm-10 form-group">
+                    <label for="region">Region</label>
+                    <input type="text" id="region" class="form-control" name="region" ngModel readonly = "readonly">
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-10 form-group">
+                    <label for="subregion">Sub Region</label>
+                    <input type="text" id="subregion" class="form-control" name="subregion" ngModel readonly = "readonly">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-10 form-group">
+                    <label for="population">Population</label>
+                    <input type="number" id="population" class="form-control" name="population" ngModel readonly = "readonly">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-10 form-group">
+                    <label for="timezones">Time Zones</label>                    
+                    <textarea id="timezones" class="form-control" name="timezones" ngModel readonly = "readonly"></textarea>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<h5>*Click on the Countries in the header to navigate to Country List</h5>

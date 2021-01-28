@@ -1,0 +1,18 @@
+<h1>Country List from Rest Countires API</h1>
+<div class="row">
+    <div class="col-xs-10">
+        <!-- <app-country-detail></app-country-detail> -->
+      <hr>
+      <ul class="list-group">
+        <a
+          class="list-group-item"
+          style="cursor: pointer"
+          *ngFor="let country of countries; let i = index"
+          (click)="onEditCountry(country.alpha3Code)"
+        >
+          {{ country.name }}
+        </a>
+      </ul>
+    </div>
+  </div>
+  
